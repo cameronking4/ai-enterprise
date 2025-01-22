@@ -58,25 +58,28 @@ const Animated: React.FC<AnimatedProps> = ({
             variants={animatedVariants}
             transition={transition}
         >
-            {React.Children.map(children, (child, index) => {
-                // Cast the child to an IconType to access the IconType properties
-                const icon = child as React.ReactElement<IconType>;
-                return (
-                    <motion.div
-                        key={index}
-                        whileHover={{ scale: 1.1, color: "#ff5733" }} // Modify the color when hovering
-                        whileTap={{ scale: 0.9 }}
-                        style={{ width: iconSize, height: iconSize }}
-                        data-blobity
-                        data-blobity-radius={15}
-                        data-blobity-offset-x={15}
-                        data-blobity-offset-y={15}
-                        data-blobity-magnetic={false}
-                    >
-                        {icon}
-                    </motion.div>
-                );
-            })}
+            {Array.isArray(children) 
+                ? children.map((child, index) => {
+                    // Cast the child to an IconType to access the IconType properties
+                    const icon = child as React.ReactElement<IconType>;
+                    return (
+                        <motion.div
+                            key={index}
+                            whileHover={{ scale: 1.1, color: "#ff5733" }} // Modify the color when hovering
+                            whileTap={{ scale: 0.9 }}
+                            style={{ width: iconSize, height: iconSize }}
+                            data-blobity
+                            data-blobity-radius={15}
+                            data-blobity-offset-x={15}
+                            data-blobity-offset-y={15}
+                            data-blobity-magnetic={false}
+                        >
+                            {icon}
+                        </motion.div>
+                    );
+                })
+                : children
+            }
         </motion.div>
     );
 };

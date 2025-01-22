@@ -6,7 +6,6 @@ import AnimatedBody from "../../animations/AnimatedBody";
 import { motion } from "framer-motion";
 import Container from "../container/Container";
 import React from "react";
-import {SiGithub} from "react-icons/si";
 import {BsDiscord, BsLink45Deg, BsYoutube} from "react-icons/bs";
 const ProjectCard = ({
     id,
@@ -76,7 +75,7 @@ const ProjectCard = ({
                                 data-blobity-offset-x="4"
                                 data-blobity-offset-y="4"
                                 data-blobity-magnetic="false">
-                               {demo.includes("discord") ? <BsDiscord/> : <BsLink45Deg/>}
+                                {demo.includes("discord") ? <BsDiscord/> : <BsLink45Deg/>}
                             </Link>
                         </>
                     ) : (

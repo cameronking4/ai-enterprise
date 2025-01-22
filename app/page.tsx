@@ -20,6 +20,8 @@ export default function Home() {
 
     const [isMobile, setIsMobile] = useState(false);
 
+    console.log(isMobile);
+
     useEffectOnce(() => {
         window.scrollTo({
             top: 0,
