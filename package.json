@@ -22,7 +22,8 @@
     "@react-three/fiber": "^8.16.8",
     "@react-three/rapier": "^1.4.0",
     "@tailwindcss/line-clamp": "^0.4.2",
-    "framer-motion": "^10.6.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^10.18.0",
     "gsap": "^3.11.5",
     "kinet": "^2.2.1",
     "leva": "^0.9.35",
@@ -36,6 +37,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "scroller-motion": "^1.2.3",
     "sharp": "^0.32.0",
+    "tailwind-merge": "^2.6.0",
     "three": "^0.166.1",
     "touch-cli": "^0.0.1",
     "usehooks-ts": "^2.9.1"
