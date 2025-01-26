@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "www.ai-enterprise-framework.com",
     images: [
       {
-        url: "./public/metadata.jpg",
+        url: "https://utfs.io/f/zFhXe4KhKijBv7a8nvIT352BJSgOqXYNHEiMIdZe9sRCyAcP",
         width: 1200,
         height: 630,
         alt: "ai enterprise framework",
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ai enterprise framework",
     description:
-      "ai enterprise framework is a framework built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
+      "ai enterprise framework is a framework for agents running 24.7, collaborting and scaling over Slack or Discord. 100% open-source, and customizable.",
     creator: "ai enterprise framework",
     creatorId: "0000000000",
-    images: ["./public/metadata.jpg"],
+    images: ["https://utfs.io/f/zFhXe4KhKijBv7a8nvIT352BJSgOqXYNHEiMIdZe9sRCyAcP"],
   },
   robots: {
     index: true,
